@@ -6,7 +6,7 @@
     "node": "22.x"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && prisma generate",
     "start": "node dist/server.js",
     "dev": "tsc && nodemon dist/server.js",
     "db:migrate": "npx prisma migrate dev",
